@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/ip/clock_generator/clock_generator_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/ip/receiver_FIFO/receiver_FIFO_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/ip/transmitter_fifo/transmitter_fifo_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/mirror.vhd"
+vhdl xil_defaultlib  "../../../riprova.srcs/sim_2/new/SIMSIM.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1 @@
+ftdi_clock_gen_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../test_Ax3.srcs/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen_sim_netlist.vhdl,incdir="../../../../test_Ax3.srcs/sources_1/ip/ftdi_clock_gen"

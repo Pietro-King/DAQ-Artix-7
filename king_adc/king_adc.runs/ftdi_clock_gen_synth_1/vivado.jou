@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon May 22 16:08:28 2017
+# Process ID: 17092
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/test_Ax3/test_Ax3.runs/ftdi_clock_gen_synth_1
+# Command line: vivado.exe -log ftdi_clock_gen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ftdi_clock_gen.tcl
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/test_Ax3/test_Ax3.runs/ftdi_clock_gen_synth_1/ftdi_clock_gen.vds
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/test_Ax3/test_Ax3.runs/ftdi_clock_gen_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ftdi_clock_gen.tcl -notrace

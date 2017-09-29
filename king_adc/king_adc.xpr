@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="17" Path="C:/Users/Valerio/Desktop/TESI_DIGITALE/king_adc/king_adc.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="c15dd3b4c06d45c5a6a71d572676da02"/>
+    <Option Name="Part" Val="xc7a100tcsg324-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="SimulatorLanguage" Val="VHDL"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+    <Option Name="ActiveSimSet" Val="sim_2"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/king_adc.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/king_adc.ip_user_files/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="212"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="30"/>
+    <Option Name="WTModelSimExportSim" Val="30"/>
+    <Option Name="WTQuestaExportSim" Val="30"/>
+    <Option Name="WTIesExportSim" Val="30"/>
+    <Option Name="WTVcsExportSim" Val="30"/>
+    <Option Name="WTRivieraExportSim" Val="30"/>
+    <Option Name="WTActivehdlExportSim" Val="30"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd"/>
+          <Attr Name="ImportTime" Val="1493294990"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd"/>
+          <Attr Name="ImportTime" Val="1492079745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd"/>
+          <Attr Name="ImportTime" Val="1470331972"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd"/>
+          <Attr Name="ImportTime" Val="1462280318"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd"/>
+          <Attr Name="ImportTime" Val="1492074774"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/mirror.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/mirror.vhd"/>
+          <Attr Name="ImportTime" Val="1493367292"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/TESI_DIGITALE/VIVADO TRANSMIT FROM FPGA/import_ise_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../VIVADO TRANSMIT FROM FPGA/import_ise_summary.txt"/>
+          <Attr Name="ImportTime" Val="1491902909"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/command_block.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../start_stop_5_13/start_stop_5_13.srcs/sources_1/new/command_block.vhd"/>
+          <Attr Name="ImportTime" Val="1494862754"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/PIPO_SHIFT.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../start_stop_5_13/start_stop_5_13.srcs/sources_1/new/PIPO_SHIFT.vhd"/>
+          <Attr Name="ImportTime" Val="1494849886"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/SINGLE_SHOT_ADC.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PROVA_ADC_TEST_AX3/PROVA_ADC_TEST_AX3.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd"/>
+          <Attr Name="ImportTime" Val="1501792337"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="ADC_BRIDGE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/transmit_from_fpga_test/mirror_ucf.ucf">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/mirror_ucf.ucf"/>
+          <Attr Name="ImportTime" Val="1476192135"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/transmit_from_fpga_test/mirror_nets.ucf">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/mirror_nets.ucf"/>
+          <Attr Name="ImportTime" Val="1470391670"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/new/CONSTRAINTS_PROVA.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../start_stop_5_13/start_stop_5_13.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc"/>
+          <Attr Name="ImportTime" Val="1495113779"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/CONSTRAINTS_PROVA.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_2" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_2">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_2/imports/start_stop_5_13/command_test.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../start_stop_5_13/command_test.wcfg"/>
+          <Attr Name="ImportTime" Val="1495097803"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_2/new/simulazioneADC_BRIDGE.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PROVA_ADC_TEST_AX3/PROVA_ADC_TEST_AX3.srcs/sim_2/new/simulazioneADC_BRIDGE.vhd"/>
+          <Attr Name="ImportTime" Val="1505723505"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="simulazioneADC_BRIDGE"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../start_stop_5_13/command_test.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="clock_generator" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clock_generator">
+      <File Path="$PSRCDIR/sources_1/ip/clock_generator/clock_generator.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../VIVADO TRANSMIT FROM FPGA/VIVADO TRANSMIT FROM FPGA.srcs/sources_1/ip/clock_generator/clock_generator.xci"/>
+          <Attr Name="ImportTime" Val="1491904453"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="clock_generator"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ftdi_clock_gen" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ftdi_clock_gen">
+      <File Path="$PSRCDIR/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../VIVADO TRANSMIT FROM FPGA/VIVADO TRANSMIT FROM FPGA.srcs/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen.xci"/>
+          <Attr Name="ImportTime" Val="1491904457"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ftdi_clock_gen"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="receiver_FIFO" Type="BlockSrcs" RelSrcDir="$PSRCDIR/receiver_FIFO">
+      <File Path="$PSRCDIR/sources_1/ip/receiver_FIFO/receiver_FIFO.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../VIVADO TRANSMIT FROM FPGA/VIVADO TRANSMIT FROM FPGA.srcs/sources_1/ip/receiver_FIFO/receiver_FIFO.xci"/>
+          <Attr Name="ImportTime" Val="1491904461"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="receiver_FIFO"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="transmitter_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/transmitter_fifo">
+      <File Path="$PSRCDIR/sources_1/ip/transmitter_fifo/transmitter_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../VIVADO TRANSMIT FROM FPGA/VIVADO TRANSMIT FROM FPGA.srcs/sources_1/ip/transmitter_fifo/transmitter_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1491904467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="transmitter_fifo"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_ADC" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_ADC">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_ADC/new/SIM_ADCX.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PROVA_ADC_TEST_AX3/PROVA_ADC_TEST_AX3.srcs/sim_ADC/new/SIM_ADCX.vhd"/>
+          <Attr Name="ImportTime" Val="1505729837"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_3" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_3" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="clock_generator_synth_1" Type="Ft3:Synth" SrcSet="clock_generator" Part="xc7a100tcsg324-1" ConstrsSet="clock_generator" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/clock_generator_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ftdi_clock_gen_synth_1" Type="Ft3:Synth" SrcSet="ftdi_clock_gen" Part="xc7a100tcsg324-1" ConstrsSet="ftdi_clock_gen" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ftdi_clock_gen_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="receiver_FIFO_synth_1" Type="Ft3:Synth" SrcSet="receiver_FIFO" Part="xc7a100tcsg324-1" ConstrsSet="receiver_FIFO" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/receiver_FIFO_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="transmitter_fifo_synth_1" Type="Ft3:Synth" SrcSet="transmitter_fifo" Part="xc7a100tcsg324-1" ConstrsSet="transmitter_fifo" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/transmitter_fifo_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_3" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="clock_generator_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="clock_generator" Description="Default settings for Implementation." SynthRun="clock_generator_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ftdi_clock_gen_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ftdi_clock_gen" Description="Default settings for Implementation." SynthRun="ftdi_clock_gen_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="receiver_FIFO_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="receiver_FIFO" Description="Default settings for Implementation." SynthRun="receiver_FIFO_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="transmitter_fifo_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="transmitter_fifo" Description="Default settings for Implementation." SynthRun="transmitter_fifo_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+</Project>

@@ -1,0 +1,3 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/Valerio/Desktop/TESI_DIGITALE/test_Ax3/test_Ax3.srcs/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen.xdc rfile:../../../test_Ax3.srcs/sources_1/ip/ftdi_clock_gen/ftdi_clock_gen.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports CLK_IN1]] 0.33332

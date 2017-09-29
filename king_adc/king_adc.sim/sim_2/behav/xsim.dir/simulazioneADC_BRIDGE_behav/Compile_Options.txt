@@ -1,0 +1,1 @@
+-wto "c15dd3b4c06d45c5a6a71d572676da02" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "simulazioneADC_BRIDGE_behav" "xil_defaultlib.simulazioneADC_BRIDGE" -log "elaborate.log" 

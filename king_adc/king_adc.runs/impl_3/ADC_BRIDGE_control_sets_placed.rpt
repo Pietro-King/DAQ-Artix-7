@@ -1,0 +1,105 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Fri Sep 29 14:08:33 2017
+| Host         : DESKTOP-H3JQ5EJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ADC_BRIDGE_control_sets_placed.rpt
+| Design       : ADC_BRIDGE
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |    90 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              45 |           23 |
+| No           | No                    | Yes                    |             208 |           57 |
+| No           | Yes                   | No                     |             161 |           42 |
+| Yes          | No                    | No                     |              80 |           22 |
+| Yes          | No                    | Yes                    |             120 |           24 |
+| Yes          | Yes                   | No                     |              40 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                          Clock Signal                          |                                                          Enable Signal                                                         |                                                         Set/Reset Signal                                                        | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_rd_reg2                                                    |                1 |              1 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_rd_reg2                                                     |                1 |              1 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2]                                                   |                1 |              2 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                                          |                1 |              3 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0]  |                2 |              3 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/AS[0]  |                1 |              3 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/AS[0] |                2 |              3 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                                         |                1 |              3 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0] |                1 |              3 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | RST_SHIFT[0]                                                                                                                    |                2 |              4 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_wr_reg2                                                     |                2 |              4 |
+|  MAIN_CLOCK/inst/CLK_OUT3                                      |                                                                                                                                |                                                                                                                                 |                3 |              4 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_wr_reg2                                                    |                1 |              4 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | RST_SHIFT[0]                                                                                                                    |                3 |              5 |
+| ~MAIN_CLOCK/inst/CLK_OUT3                                      |                                                                                                                                |                                                                                                                                 |                5 |              8 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | eqOp                                                                                                                            |                2 |              8 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 | BRIDGE/transmitter_machine/E[0]                                                                                                |                                                                                                                                 |                4 |              8 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/goreg_bm.dout_i_reg[7][0] | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0]                                                  |                2 |              8 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | COMMAND/flag_reg_n_0                                                                                                           |                                                                                                                                 |                2 |              8 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | BRIDGE/E[0]                                                                                                                    |                                                                                                                                 |                5 |              8 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2]                                                  |                3 |             10 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                |                                                                                                                                 |                7 |             11 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                      | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2]                                                  |                4 |             20 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0]                               | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2]                                                   |                4 |             20 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                |                                                                                                                                 |                8 |             22 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i                         |                8 |             32 |
+|  MAIN_CLOCK/inst/CLK_OUT3                                      |                                                                                                                                | ADC/clear                                                                                                                       |               13 |             32 |
+|  MAIN_CLOCK/inst/CLK_OUT3                                      |                                                                                                                                | ADC/debounce_delay[0]_i_1_n_0                                                                                                   |                8 |             32 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | COUNT_1[0]_i_2_n_0                                                                                                             | COUNT_1[0]_i_1_n_0                                                                                                              |                8 |             32 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]                                                   |               10 |             40 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]                                                  |                8 |             40 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]                               | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[1]                                                   |                7 |             40 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | BRIDGE/receive_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[1]                                                   |                8 |             40 |
+|  BRIDGE/register_and_buffer/ftdi_clock_generator/inst/CLK_OUT1 |                                                                                                                                | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[1]                                                  |               10 |             40 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]                              | BRIDGE/transmit_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[1]                                                  |                9 |             40 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      |                                                                                                                                | COMMAND/pipo_rst                                                                                                                |               10 |             56 |
+|  MAIN_CLOCK/inst/CLK_OUT1                                      | COMMAND/pipo/Dout_0[7]_i_1_n_0                                                                                                 |                                                                                                                                 |               11 |             56 |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 2      |                     1 |
+| 3      |                     6 |
+| 4      |                     4 |
+| 5      |                     1 |
+| 8      |                     6 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 16+    |                    15 |
++--------+-----------------------+
+
+
