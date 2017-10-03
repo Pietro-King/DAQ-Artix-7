@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Fri Sep 29 14:22:49 2017
+| Date             : Mon Oct 02 19:17:13 2017
 | Host             : DESKTOP-H3JQ5EJ running 64-bit major release  (build 9200)
 | Command          : report_power -file ADC_BRIDGE_power_routed.rpt -pb ADC_BRIDGE_power_summary_routed.pb -rpx ADC_BRIDGE_power_routed.rpx
 | Design           : ADC_BRIDGE
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.314 |
-| Dynamic (W)              | 0.216 |
+| Total On-Chip Power (W)  | 0.313 |
+| Dynamic (W)              | 0.215 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.6  |
@@ -49,18 +49,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.005 |        9 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1258 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      339 |     63400 |            0.53 |
-|   Register     |    <0.001 |      654 |    126800 |            0.52 |
-|   CARRY4       |    <0.001 |       72 |     15850 |            0.45 |
+| Clocks         |     0.004 |        9 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1367 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      389 |     63400 |            0.61 |
+|   Register     |    <0.001 |      694 |    126800 |            0.55 |
+|   CARRY4       |    <0.001 |       88 |     15850 |            0.56 |
 |   Others       |     0.000 |       97 |       --- |             --- |
-| Signals        |    <0.001 |      883 |       --- |             --- |
+| Signals        |    <0.001 |      973 |       --- |             --- |
 | Block RAM      |    <0.001 |        1 |       135 |            0.74 |
 | MMCM           |     0.201 |        2 |         6 |           33.33 |
 | I/O            |     0.008 |       25 |       210 |           11.90 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.314 |          |           |                 |
+| Total          |     0.313 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.023 |       0.007 |      0.016 |
+| Vccint    |       1.000 |     0.022 |       0.006 |      0.016 |
 | Vccaux    |       1.800 |     0.130 |       0.112 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,9 +145,9 @@ Table of Contents
 +--------------------------------------------------------------------------+-----------+
 | Name                                                                     | Power (W) |
 +--------------------------------------------------------------------------+-----------+
-| ADC_BRIDGE                                                               |     0.216 |
+| ADC_BRIDGE                                                               |     0.215 |
 |   ADC                                                                    |    <0.001 |
-|   BRIDGE                                                                 |     0.115 |
+|   BRIDGE                                                                 |     0.114 |
 |     arb                                                                  |    <0.001 |
 |     receive_fifo                                                         |     0.002 |
 |       U0                                                                 |     0.002 |
@@ -194,11 +194,11 @@ Table of Contents
 |       IOBUF_7                                                            |    <0.001 |
 |       ftdi_clock_generator                                               |     0.107 |
 |         inst                                                             |     0.107 |
-|     transmit_fifo                                                        |     0.002 |
-|       U0                                                                 |     0.002 |
-|         inst_fifo_gen                                                    |     0.002 |
-|           gconvfifo.rf                                                   |     0.002 |
-|             grf.rf                                                       |     0.002 |
+|     transmit_fifo                                                        |     0.001 |
+|       U0                                                                 |     0.001 |
+|         inst_fifo_gen                                                    |     0.001 |
+|           gconvfifo.rf                                                   |     0.001 |
+|             grf.rf                                                       |     0.001 |
 |               gntv_or_sync_fifo.gcx.clkx                                 |    <0.001 |
 |                 gnxpm_cdc.gsync_stage[1].rd_stg_inst                     |    <0.001 |
 |                 gnxpm_cdc.gsync_stage[1].wr_stg_inst                     |    <0.001 |
@@ -230,7 +230,7 @@ Table of Contents
 |                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
 |     transmitter_machine                                                  |    <0.001 |
 |   COMMAND                                                                |     0.001 |
-|     pipo                                                                 |     0.001 |
+|     pipo                                                                 |    <0.001 |
 |   MAIN_CLOCK                                                             |     0.095 |
 |     inst                                                                 |     0.095 |
 +--------------------------------------------------------------------------+-----------+

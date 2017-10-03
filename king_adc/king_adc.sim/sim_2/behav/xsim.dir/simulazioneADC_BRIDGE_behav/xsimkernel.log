@@ -1,4 +1,7 @@
-Running: xsim.dir/simulazioneADC_BRIDGE_behav/xsimk.exe -simmode gui -wdb simulazioneADC_BRIDGE_behav.wdb -simrunnum 0 -socket 49467
+Running: xsim.dir/simulazioneADC_BRIDGE_behav/xsimk.exe -simmode gui -wdb simulazioneADC_BRIDGE_behav.wdb -simrunnum 0 -socket 50353
 Design successfully loaded
-Design Loading Memory Usage: 11620 KB (Peak: 11620 KB)
-Design Loading CPU Usage: 77 ms
+Design Loading Memory Usage: 11584 KB (Peak: 11584 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 21904 KB (Peak: 21904 KB)
+Simulation CPU Usage: 42468 ms

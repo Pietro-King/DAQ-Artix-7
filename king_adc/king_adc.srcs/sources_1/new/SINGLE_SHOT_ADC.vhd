@@ -67,7 +67,7 @@ if rising_edge (clk_x)  then
         debounce_flag<='1';  
    
         
-    elsif counter>19 then ---r_sclk<='1';
+    elsif counter>21 then ---r_sclk<='1';
         conv_flag <= '0';
         
     else 
@@ -117,7 +117,7 @@ end process;
 
 adc_data_valid_process: process(clk_x)
 begin
-if counter =19 then
+if counter =21 then
 o_adc_data_valid <='1';
 else
 o_adc_data_valid <='0';

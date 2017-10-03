@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri Sep 29 14:22:47 2017
+| Date         : Mon Oct 02 19:17:11 2017
 | Host         : DESKTOP-H3JQ5EJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ADC_BRIDGE_methodology_drc_routed.rpt -rpx ADC_BRIDGE_methodology_drc_routed.rpx
 | Design       : ADC_BRIDGE
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 25
+             Violations found: 73
 +-----------+----------+--------------------------------------------------------+------------+
 | Rule      | Severity | Description                                            | Violations |
 +-----------+----------+--------------------------------------------------------+------------+
 | TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
-| TIMING-16 | Warning  | Large setup violation                                  | 1          |
+| TIMING-16 | Warning  | Large setup violation                                  | 49         |
 | TIMING-18 | Warning  | Missing input or output delay                          | 17         |
 | TIMING-24 | Warning  | Overridden Max delay datapath only                     | 4          |
 | XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 2          |
@@ -43,7 +43,247 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -2.334 ns between ADC/counter_reg[14]/C (clocked by CLK_OUT3_clock_generator) and tx_valid_reg/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.751 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[1]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.767 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[2]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.823 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[6]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.834 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[7]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.888 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[4]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.923 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[3]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.933 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[0]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.959 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[5]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.997 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[0]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -3.174 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[1]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -3.289 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_valid_reg/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -3.354 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[2]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[0]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[1]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[2]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[3]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[4]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[5]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[7]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -3.402 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and tx_data_reg[6]/CE (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -3.414 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[3]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -3.547 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[4]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -3.563 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[6]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -3.637 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[7]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -3.658 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[5]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -3.661 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[8]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -3.677 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[10]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -3.751 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[11]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -3.772 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[9]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -3.776 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[12]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -3.792 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[14]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -3.866 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[15]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -3.887 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[13]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -3.890 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[16]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -3.906 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[18]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -3.980 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[19]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -4.001 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[17]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -4.004 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[20]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -4.020 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[22]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -4.094 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[23]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -4.115 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[21]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -4.118 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[24]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -4.134 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[26]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -4.208 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[27]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -4.229 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[25]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -4.233 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[28]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -4.249 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[30]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -4.323 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[31]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -4.344 ns between ADC/counter_reg[12]/C (clocked by CLK_OUT3_clock_generator) and counter_tx_valid_reg[29]/D (clocked by CLK_OUT1_clock_generator). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

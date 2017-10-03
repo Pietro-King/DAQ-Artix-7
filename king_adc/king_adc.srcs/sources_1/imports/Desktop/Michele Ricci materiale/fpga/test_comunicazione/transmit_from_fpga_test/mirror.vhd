@@ -185,7 +185,7 @@ end component;
  signal o_cs    :   std_logic :='1';
  signal o_mosi:   std_logic :='1';
  signal i_miso:   std_logic;
- 
+ signal A : std_logic:='0';
  
  signal trigger: std_logic:='0'; -------trigger che per test scrivo attraverso pc con command
 -------------------------------------
@@ -230,7 +230,8 @@ signal trans_signal : std_logic_vector(fifo_port_r-1 downto 0);
 -----------------------------------------------------
 
 signal command_out_signal: std_logic_vector(7 downto 0); ---------------segnale per fare il case in output
-      
+
+shared variable counter_tx_valid :integer := 1;      
       
 -------------------------------------arch begin     ----*****----BEGIN----*****----
 begin
@@ -344,9 +345,7 @@ port map
 
 
 
- i_miso <= serial_adc_output;----------------i_miso è l output seriale dell adc input dell intero codice !!!!
- --i_read <= adc_trigger;-----------------!!!!!!!!!DA AGGIUNGERE SUCCESSIVAMENTE ..VERRA DAL CHIP DI GIO
- 
+ i_miso <= serial_adc_output;----------------i_miso è l output seriale dell adc input dell intero codice !!!! 
  sclk <= o_sclk;------------------!!! sclk è il clk che devo mandare dentro il pin dell adc e lo sto connettendo all output o_sclk del blocco vhdl che controlla l adc
  cs <= o_cs;------------------------------stessa cosa per chip select ... l output del blocco principale cs lo mando ad un io pin di Mars e quindi alla board dell adc
  
@@ -443,46 +442,75 @@ end process;
 
 
 
----------------------------------------------------------------------------------------------
-adc_data_acquisition: process(CLK)
+tx_valid_process:process(CLK)
 begin
 if rising_edge(CLK) then
-
-if  tx_ready='1' and o_adc_data_valid ='1' then  --------(ricorda nel blocco bridge è scritto che tx ready <= not(almost full receive fifo))start transmission of digital adc out to pc....mando il tx valid alto assieme al data_valid output dell adc
-   tx_valid <='1'; 
-
---elsif tx_valid ='1' and rx_data = "11111111"  then                  ---------STOP TRANSMISSION DATA TO PC scrivendo da qt 
---      tx_valid <='0';
-       
-else 
-      tx_valid<='0';
-	
-end if;
-end if;
-end process;
-
-
-process(CLK)
-begin
-
-if rising_edge(CLK) then
-  
-    if tx_ready ='1' and tx_valid ='1' then
-  
-    tx_data <= o_adc_data(15 downto 8) ;  ------"01000000";     ------------------------------- trasferisco al pc il dato digitale convertito
-  
+ -------------------------------------
+ 
+    if o_adc_data_valid='1' and tx_ready='1' then 
+    
+    counter_tx_valid := counter_tx_valid + 1;
+    
+    else counter_tx_valid :=1;  
     end if;
     
+ --------------------------------------   
+ 
+    if  counter_tx_valid = 2 then  
+    tx_valid<='1';
+    tx_data <= o_adc_data(15 downto 8) ; 
+    
+    elsif counter_tx_valid = 3 then
+    tx_valid<='1';
+    tx_data <= o_adc_data(7 downto 0) ;
+    
+    else tx_valid<='0';
+    end if ;  
+    
+---------------------------------------
+     
 end if;
-
 end process;
+     
 
-
-
----i_read_pin<=i_read;-------------AGGIUNTO PER TEST
----------------------------------------------
 
 end  Behavioral ;
+
+-----------------------------------------------------------------------------------------------
+--adc_data_acquisition: process(CLK)-------------------prima avevo CLK ---cambiato per prova !!!!
+--begin
+--if rising_edge(CLK) then---------------------l'usb trasmette 8 bit ...l'adc converte fornendo in output 16 bit( )quindi bisogna spacchettare il dato 
+
+
+--    if tx_valid='1' and A='0' then
+--    tx_data <= o_adc_data(15 downto 8) ; 
+--    A<='1';
+ 
+--    elsif tx_valid='1' and A='1' then
+--    tx_data <= o_adc_data(7 downto 0) ; 
+--    A<='0';
+ -------------------------------------------------------   
+-- --   if  tx_ready='1' and o_adc_data_valid ='1' and A='0' then  --------(ricorda nel blocco bridge è scritto che tx ready <= not(almost full receive fifo))start transmission of digital adc out to pc....mando il tx valid alto assieme al data_valid output dell adc
+-- --  tx_valid <='1'; 
+-- --   tx_data <= o_adc_data(15 downto 8) ; 
+-- --   A<='1';
+    
+-- --   elsif tx_ready='1' and o_adc_data_valid ='1' and A='1' then
+-- --   tx_valid <='1';
+-- --   tx_data <= o_adc_data(7 downto 0) ; 
+-- --   A<='0';
+    
+-- --   else 
+-- --   tx_valid<='0';
+
+-- --  end if;
+
+    
+--end if;
+--end process;
+
+
+
 
 
 

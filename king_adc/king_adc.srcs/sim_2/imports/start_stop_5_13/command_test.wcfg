@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="593696164001fs"></ZoomEndTime>
-      <Cursor1Time time="1008300000fs"></Cursor1Time>
+      <ZoomStartTime time="102065833333fs"></ZoomStartTime>
+      <ZoomEndTime time="102131433334fs"></ZoomEndTime>
+      <Cursor1Time time="102135500000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="123"></NameColumnWidth>
-      <ValueColumnWidth column_width="82"></ValueColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="40" />
+   <WVObjectSize size="42" />
    <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_rxfN" type="logic">
       <obj_property name="ElementShortName">ftdi_rxfN</obj_property>
       <obj_property name="ObjectShortName">ftdi_rxfN</obj_property>
@@ -34,6 +34,10 @@
    <wvobject fp_name="/simulazioneADC_BRIDGE/CLK_IN1_P" type="logic">
       <obj_property name="ElementShortName">CLK_IN1_P</obj_property>
       <obj_property name="ObjectShortName">CLK_IN1_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
    <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_dq" type="array">
       <obj_property name="ElementShortName">ftdi_dq[7:0]</obj_property>
@@ -126,6 +130,10 @@
       <obj_property name="ElementShortName">ftdi_wrN</obj_property>
       <obj_property name="ObjectShortName">ftdi_wrN</obj_property>
    </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/tx_ready" type="logic">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
    <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/o_adc_data_valid" type="logic">
       <obj_property name="ElementShortName">o_adc_data_valid</obj_property>
       <obj_property name="ObjectShortName">o_adc_data_valid</obj_property>
@@ -139,6 +147,10 @@
       <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/serial_adc_output" type="logic">
+      <obj_property name="ElementShortName">serial_adc_output</obj_property>
+      <obj_property name="ObjectShortName">serial_adc_output</obj_property>
    </wvobject>
    <wvobject fp_name="/simulazioneADC_BRIDGE/serial_adc_output" type="logic">
       <obj_property name="ElementShortName">serial_adc_output</obj_property>
@@ -183,9 +195,5 @@
    <wvobject fp_name="/simulazioneADC_BRIDGE/num_cycles" type="other">
       <obj_property name="ElementShortName">num_cycles</obj_property>
       <obj_property name="ObjectShortName">num_cycles</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulazioneADC_BRIDGE/serial_adc_output" type="logic">
-      <obj_property name="ElementShortName">serial_adc_output</obj_property>
-      <obj_property name="ObjectShortName">serial_adc_output</obj_property>
    </wvobject>
 </wave_config>
