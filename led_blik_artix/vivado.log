@@ -1,0 +1,285 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Oct 04 10:17:33 2017
+# Process ID: 13108
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7612 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.xpr
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/vivado.log
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 698.309 ; gain = 103.078
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+write_cfgmem
+Command: write_cfgmem
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-163] Missing value for option 'file', please type 'write_cfgmem -help' for usage info.
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 846.285 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/0000171709ce01
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl512s-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+man write_cfgmem
+invalid command name "man"
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 design.bit"-file design.mcs
+extra characters after close-quote
+write_cfgmem -format mcs -interface bpix16 -size 128 -loadbit "up 0x0 led_blink.bit"-file led_blink.mcs
+extra characters after close-quote
+write_cfgmem -format mcs -interface bpix16 -size 65 -loadbit "up 0x0 design.bit" -file design.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 65 -loadbit {up 0x0 design.bit} -file design.mcs
+ERROR: [Writecfgmem 68-14] Incorrect memory size 65. It has to be power of 2.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile led_blink.bit
+ERROR: [Bitstream 40-47] File led_blink.bit does not exist.
+ERROR: [Bitstream 40-46] File led_blink.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile led_blink.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit
+ERROR: [Bitstream 40-47] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit does not exist.
+ERROR: [Bitstream 40-46] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1\led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit
+ERROR: [Bitstream 40-47] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit does not exist.
+ERROR: [Bitstream 40-46] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1\led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit
+ERROR: [Bitstream 40-47] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit does not exist.
+ERROR: [Bitstream 40-46] File C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile C:UsersValerioDesktopTESI_DIGITALEled_blik_artixled_blik_artix.runsimpl_1led_blink.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit
+Writing file ./led_blink.mcs
+Writing log file ./led_blink.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    May 23 17:07:07 2017    C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 991.617 ; gain = 139.813
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:02:15 . Memory (MB): peak = 991.617 ; gain = 0.000
+endgroup
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+write_cfgmem -format mcs -interface -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface -size 64 -loadbit {up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} -file led_blink.mcs
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-158] 'file' can only be specified once.
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit {up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file ./led_blink.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:03 ; elapsed = 00:02:16 . Memory (MB): peak = 991.617 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices] 0]
+ERROR: [Labtools 27-2254] Booting from configuration memory device unsuccessful.
+boot_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:03:01 . Memory (MB): peak = 991.617 ; gain = 0.000
+ERROR: [Common 17-39] 'boot_hw_device' failed due to earlier errors.
+write_cfgmem -format mcs -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+Command: write_cfgmem -format mcs -size 64 -loadbit {up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} -file led_blink.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file ./led_blink.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs -force
+Command: write_cfgmem -format mcs -size 64 -loadbit {up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} -file led_blink.mcs -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit
+Writing file ./led_blink.mcs
+Writing log file ./led_blink.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX8
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    May 23 17:07:07 2017    C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 991.617 ; gain = 0.000
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:02:11 . Memory (MB): peak = 991.617 ; gain = 0.000
+endgroup
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/0000171709ce01
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0000171709ce01
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 991.617 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 04 18:43:37 2017...

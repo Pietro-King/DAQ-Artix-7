@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Sep 15 09:53:52 2017
+# Process ID: 13760
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15920 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.xpr
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/vivado.log
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.xpr

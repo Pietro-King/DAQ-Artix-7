@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Oct 04 10:17:33 2017
+# Process ID: 13108
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7612 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.xpr
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/vivado.log
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+write_cfgmem
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl512s-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+man write_cfgmem
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 design.bit"-file design.mcs
+write_cfgmem -format mcs -interface bpix16 -size 128 -loadbit "up 0x0 led_blink.bit"-file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 65 -loadbit "up 0x0 design.bit" -file design.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1\led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.runs\impl_1\led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+write_cfgmem -format mcs -interface -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -interface bpix16 -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+boot_hw_device  [lindex [get_hw_devices] 0]
+write_cfgmem -format mcs -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs
+write_cfgmem -format mcs -size 64 -loadbit "up 0x0 C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit" -file led_blink.mcs -force
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blink.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

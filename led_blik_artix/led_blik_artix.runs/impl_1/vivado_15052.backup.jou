@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 23 16:57:41 2017
+# Process ID: 15052
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1
+# Command line: vivado.exe -log led_blink.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source led_blink.tcl -notrace
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.vdi
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source led_blink.tcl -notrace

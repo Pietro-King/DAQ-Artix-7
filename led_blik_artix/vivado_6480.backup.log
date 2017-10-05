@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Sep 15 00:57:59 2017
+# Process ID: 6480
+# Current directory: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4904 C:\Users\Valerio\Desktop\TESI_DIGITALE\led_blik_artix\led_blik_artix.xpr
+# Log file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/vivado.log
+# Journal file: C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 754.633 ; gain = 95.805
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 01:09:34 2017...

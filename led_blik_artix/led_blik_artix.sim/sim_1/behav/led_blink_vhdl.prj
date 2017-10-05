@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../led_blik_artix.srcs/sources_1/new/led_blink.vhd"
+
+# Do not sort compile order
+nosort

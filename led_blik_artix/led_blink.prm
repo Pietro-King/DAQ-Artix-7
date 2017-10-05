@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX8
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    May 23 17:07:07 2017    C:/Users/Valerio/Desktop/TESI_DIGITALE/led_blik_artix/led_blik_artix.runs/impl_1/led_blink.bit
