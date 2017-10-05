@@ -1,0 +1,9 @@
+1. open the vivado project
+2 synthetize and implement
+3. select "add configuration memory device" and add the flash
+4. create the bitstream using "Generate Bitstream"
+5. put the following commands in Tcl console successively:
+    1.set_property BITSTREAM.Config.SPI_BUSWIDTH 4 [current_design]
+    2.write_bitstream xxx.bit (make sure do not click "Generate Bitstream" button instead)
+    3.write_cfgmem -format mcs -interface SPIx4 -size xxx -loadbit "up 0x0 xxx.bit" -file xxx.mcs
+6. the flash is programmed.
