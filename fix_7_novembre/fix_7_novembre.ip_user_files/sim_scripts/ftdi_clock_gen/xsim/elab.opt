@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot ftdi_clock_gen xil_defaultlib.ftdi_clock_gen -log elaborate.log

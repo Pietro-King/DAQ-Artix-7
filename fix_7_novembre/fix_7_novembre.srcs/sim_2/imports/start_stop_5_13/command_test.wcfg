@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulazioneADC_BRIDGE_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="simulazioneADC_BRIDGE" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="102065833333fs"></ZoomStartTime>
+      <ZoomEndTime time="102131433334fs"></ZoomEndTime>
+      <Cursor1Time time="102135500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="123"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_rxfN" type="logic">
+      <obj_property name="ElementShortName">ftdi_rxfN</obj_property>
+      <obj_property name="ObjectShortName">ftdi_rxfN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_txeN" type="logic">
+      <obj_property name="ElementShortName">ftdi_txeN</obj_property>
+      <obj_property name="ObjectShortName">ftdi_txeN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_clk" type="logic">
+      <obj_property name="ElementShortName">ftdi_clk</obj_property>
+      <obj_property name="ObjectShortName">ftdi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/CLK_IN1_P" type="logic">
+      <obj_property name="ElementShortName">CLK_IN1_P</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN1_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_dq" type="array">
+      <obj_property name="ElementShortName">ftdi_dq[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ftdi_dq[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/COMMAND/command_out" type="array">
+      <obj_property name="ElementShortName">command_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">command_out[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/COMMAND/command" type="array">
+      <obj_property name="ElementShortName">command[7:0]</obj_property>
+      <obj_property name="ObjectShortName">command[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/COMMAND/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/FLAG" type="logic">
+      <obj_property name="ElementShortName">FLAG</obj_property>
+      <obj_property name="ObjectShortName">FLAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/COMMAND/tx_ready" type="logic">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/rx_ready" type="logic">
+      <obj_property name="ElementShortName">rx_ready</obj_property>
+      <obj_property name="ObjectShortName">rx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/i_read_button" type="logic">
+      <obj_property name="ElementShortName">i_read_button</obj_property>
+      <obj_property name="ObjectShortName">i_read_button</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/debounce_flag" type="logic">
+      <obj_property name="ElementShortName">debounce_flag</obj_property>
+      <obj_property name="ObjectShortName">debounce_flag</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/clk_x" type="logic">
+      <obj_property name="ElementShortName">clk_x</obj_property>
+      <obj_property name="ObjectShortName">clk_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/o_sclk" type="logic">
+      <obj_property name="ElementShortName">o_sclk</obj_property>
+      <obj_property name="ObjectShortName">o_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/cs" type="logic">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/r_cs" type="logic">
+      <obj_property name="ElementShortName">r_cs</obj_property>
+      <obj_property name="ObjectShortName">r_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/o_cs" type="logic">
+      <obj_property name="ElementShortName">o_cs</obj_property>
+      <obj_property name="ObjectShortName">o_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/sclk" type="logic">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/rx_valid" type="logic">
+      <obj_property name="ElementShortName">rx_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/tx_valid" type="logic">
+      <obj_property name="ElementShortName">tx_valid</obj_property>
+      <obj_property name="ObjectShortName">tx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/FLAG" type="logic">
+      <obj_property name="ElementShortName">FLAG</obj_property>
+      <obj_property name="ObjectShortName">FLAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_oeN" type="logic">
+      <obj_property name="ElementShortName">ftdi_oeN</obj_property>
+      <obj_property name="ObjectShortName">ftdi_oeN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_rdN" type="logic">
+      <obj_property name="ElementShortName">ftdi_rdN</obj_property>
+      <obj_property name="ObjectShortName">ftdi_rdN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_wrN" type="logic">
+      <obj_property name="ElementShortName">ftdi_wrN</obj_property>
+      <obj_property name="ObjectShortName">ftdi_wrN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/tx_ready" type="logic">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/o_adc_data_valid" type="logic">
+      <obj_property name="ElementShortName">o_adc_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_adc_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/ADC/o_adc_data" type="array">
+      <obj_property name="ElementShortName">o_adc_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_adc_data[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/serial_adc_output" type="logic">
+      <obj_property name="ElementShortName">serial_adc_output</obj_property>
+      <obj_property name="ObjectShortName">serial_adc_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/serial_adc_output" type="logic">
+      <obj_property name="ElementShortName">serial_adc_output</obj_property>
+      <obj_property name="ObjectShortName">serial_adc_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/LED_1" type="logic">
+      <obj_property name="ElementShortName">LED_1</obj_property>
+      <obj_property name="ObjectShortName">LED_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/uut/LED_2" type="logic">
+      <obj_property name="ElementShortName">LED_2</obj_property>
+      <obj_property name="ObjectShortName">LED_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/adc_trigger" type="logic">
+      <obj_property name="ElementShortName">adc_trigger</obj_property>
+      <obj_property name="ObjectShortName">adc_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/LOCKED_FTDI" type="logic">
+      <obj_property name="ElementShortName">LOCKED_FTDI</obj_property>
+      <obj_property name="ObjectShortName">LOCKED_FTDI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/lock_clk_out" type="logic">
+      <obj_property name="ElementShortName">lock_clk_out</obj_property>
+      <obj_property name="ObjectShortName">lock_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/adc_trigger" type="logic">
+      <obj_property name="ElementShortName">adc_trigger</obj_property>
+      <obj_property name="ObjectShortName">adc_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/ftdi_clk_period" type="other">
+      <obj_property name="ElementShortName">ftdi_clk_period</obj_property>
+      <obj_property name="ObjectShortName">ftdi_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/CLK_IN1_P_period" type="other">
+      <obj_property name="ElementShortName">CLK_IN1_P_period</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN1_P_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/i_clk_period" type="other">
+      <obj_property name="ElementShortName">i_clk_period</obj_property>
+      <obj_property name="ObjectShortName">i_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulazioneADC_BRIDGE/num_cycles" type="other">
+      <obj_property name="ElementShortName">num_cycles</obj_property>
+      <obj_property name="ObjectShortName">num_cycles</obj_property>
+   </wvobject>
+</wave_config>

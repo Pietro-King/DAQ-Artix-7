@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 08 16:06:30 2017
+# Process ID: 8592
+# Current directory: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4156 C:\Users\Tesista\Desktop\vivado projects\fix_7_novembre\fix_7_novembre.xpr
+# Log file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/vivado.log
+# Journal file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.xpr}
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+wait_on_run synth_3
+launch_runs impl_3 -jobs 2
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+wait_on_run impl_3
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+wait_on_run synth_3
+launch_runs impl_3 -jobs 2
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+wait_on_run impl_3
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+wait_on_run synth_3
+launch_runs impl_3 -jobs 2
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+wait_on_run impl_3

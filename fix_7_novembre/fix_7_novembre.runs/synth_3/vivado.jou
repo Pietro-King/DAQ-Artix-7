@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Nov 09 16:26:53 2017
+# Process ID: 3364
+# Current directory: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3
+# Command line: vivado.exe -log ADC_BRIDGE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_BRIDGE.tcl
+# Log file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/ADC_BRIDGE.vds
+# Journal file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source ADC_BRIDGE.tcl -notrace

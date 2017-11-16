@@ -1,0 +1,1183 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Nov 09 16:26:53 2017
+# Process ID: 3364
+# Current directory: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3
+# Command line: vivado.exe -log ADC_BRIDGE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_BRIDGE.tcl
+# Log file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/ADC_BRIDGE.vds
+# Journal file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source ADC_BRIDGE.tcl -notrace
+Command: synth_design -top ADC_BRIDGE -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4376 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 283.609 ; gain = 73.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ADC_BRIDGE' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:60]
+	Parameter fifo_port_w bound to: 16 - type: integer 
+	Parameter fifo_port_r bound to: 8 - type: integer 
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:252]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:253]
+INFO: [Synth 8-3491] module 'program_spi' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/program_spi.vhd:4' bound to instance 'program_sfera' of component 'program_spi' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:438]
+INFO: [Synth 8-638] synthesizing module 'program_spi' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/program_spi.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'program_spi' (1#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/program_spi.vhd:21]
+INFO: [Synth 8-3491] module 'clock_generator' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/clock_generator_stub.vhdl:5' bound to instance 'MAIN_CLOCK' of component 'clock_generator' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:455]
+INFO: [Synth 8-638] synthesizing module 'clock_generator' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/clock_generator_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'command_block' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/command_block.vhd:11' bound to instance 'COMMAND' of component 'command_block' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:480]
+INFO: [Synth 8-638] synthesizing module 'command_block' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/command_block.vhd:33]
+	Parameter port_width_transmit bound to: 8 - type: integer 
+	Parameter port_width_receive bound to: 8 - type: integer 
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/command_block.vhd:44]
+INFO: [Synth 8-3491] module 'PIPO_shift' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/PIPO_SHIFT.vhd:6' bound to instance 'pipo' of component 'PIPO_SHIFT' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/command_block.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'PIPO_shift' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/PIPO_SHIFT.vhd:35]
+	Parameter OUTPUT_STRING_WIDTH bound to: 56 - type: integer 
+	Parameter VECTOR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/PIPO_SHIFT.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PIPO_shift' (2#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/PIPO_SHIFT.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'command_block' (3#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/command_block.vhd:33]
+	Parameter port_width_transmit bound to: 16 - type: integer 
+	Parameter port_width_receive bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'usb_fpga_bridge' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:6' bound to instance 'BRIDGE' of component 'usb_fpga_bridge' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:499]
+INFO: [Synth 8-638] synthesizing module 'usb_fpga_bridge' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:47]
+	Parameter port_width_transmit bound to: 16 - type: integer 
+	Parameter port_width_receive bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'utility' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:6' bound to instance 'register_and_buffer' of component 'utility' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'utility' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:42]
+INFO: [Synth 8-3491] module 'ftdi_clock_gen' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/ftdi_clock_gen_stub.vhdl:5' bound to instance 'ftdi_clock_generator' of component 'ftdi_clock_gen' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ftdi_clock_gen' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/ftdi_clock_gen_stub.vhdl:16]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUF_rxfN' to cell 'IBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:90]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUF_txeN' to cell 'IBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:98]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_oeN' to cell 'OBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:118]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_rdN' to cell 'OBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:128]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_wrN' to cell 'OBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:138]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_0' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:172]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_1' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:183]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_2' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:194]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_3' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:205]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_4' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:216]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_5' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:227]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_6' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:238]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_7' to cell 'IOBUF' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'utility' (4#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:42]
+INFO: [Synth 8-3491] module 'transmitter_fsm' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd:8' bound to instance 'transmitter_machine' of component 'transmitter_fsm' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'transmitter_fsm' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'transmitter_fsm' (5#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/transmitter_fsm.vhd:23]
+INFO: [Synth 8-3491] module 'receiver_fsm' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd:7' bound to instance 'receiver_machine' of component 'receiver_fsm' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'receiver_fsm' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'receiver_fsm' (6#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/receiver_fsm.vhd:21]
+INFO: [Synth 8-3491] module 'arbiter' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd:9' bound to instance 'arb' of component 'arbiter' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'arbiter' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'arbiter' (7#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/arbiter.vhd:17]
+INFO: [Synth 8-3491] module 'receiver_FIFO' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/receiver_FIFO_stub.vhdl:5' bound to instance 'receive_fifo' of component 'receiver_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'receiver_FIFO' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/receiver_FIFO_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'transmitter_fifo' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/transmitter_fifo_stub.vhdl:5' bound to instance 'transmit_fifo' of component 'transmitter_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'transmitter_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/realtime/transmitter_fifo_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'usb_fpga_bridge' (8#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:47]
+INFO: [Synth 8-3491] module 'ADC_ARRAY' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:9' bound to instance 'ADC' of component 'ADC_ARRAY' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:548]
+INFO: [Synth 8-638] synthesizing module 'ADC_ARRAY' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:71]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc0' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:18]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'axel_adc' (9#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:18]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc1' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:133]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc2' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:142]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc3' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:151]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc4' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:160]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc5' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:169]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc6' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:178]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc7' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:187]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc8' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:196]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc9' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:205]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc10' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:214]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc11' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:223]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc12' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:232]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc13' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:241]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc14' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:250]
+INFO: [Synth 8-3491] module 'axel_adc' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/SINGLE_SHOT_ADC.vhd:5' bound to instance 'adc15' of component 'axel_adc' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'ADC_ARRAY' (10#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/ADC_ARRAY.vhd:71]
+INFO: [Synth 8-3491] module 'funnel_fifo' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:15' bound to instance 'funnel_queue' of component 'funnel_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:606]
+INFO: [Synth 8-638] synthesizing module 'funnel_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:76]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo0' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:22]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'circular_buffer' (11#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:22]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo1' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:152]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo2' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:162]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo3' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:172]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo4' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:182]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo5' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:192]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo6' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:202]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo7' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:212]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo8' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:222]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo9' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:232]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo10' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:242]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo11' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:252]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo12' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:262]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo13' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:272]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo14' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:282]
+	Parameter fifo_length bound to: 16 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:5' bound to instance 'fifo15' of component 'circular_buffer' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:292]
+INFO: [Synth 8-256] done synthesizing module 'funnel_fifo' (12#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL_FIFO.vhd:76]
+INFO: [Synth 8-3491] module 'funnel' declared at 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL.vhd:13' bound to instance 'multiplexer' of component 'funnel' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:665]
+INFO: [Synth 8-638] synthesizing module 'funnel' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL.vhd:43]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL.vhd:45]
+INFO: [Synth 8-4471] merging register 'funnel_ready_signal_reg' into 'funnel_ready_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'funnel' (13#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/FUNNEL.vhd:43]
+WARNING: [Synth 8-3848] Net retransmitted_prog_signal in module/entity ADC_BRIDGE does not have driver. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'ADC_BRIDGE' (14#1) [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:60]
+WARNING: [Synth 8-3331] design funnel_fifo has unconnected port rst
+WARNING: [Synth 8-3331] design PIPO_shift has unconnected port valid
+WARNING: [Synth 8-3331] design command_block has unconnected port tx_ready
+WARNING: [Synth 8-3331] design program_spi has unconnected port retransmitted_prog
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 322.105 ; gain = 111.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 322.105 ; gain = 111.738
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clock_generator' instantiated as 'MAIN_CLOCK' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:455]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ftdi_clock_gen' instantiated as 'BRIDGE/register_and_buffer/ftdi_clock_generator' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/utility.vhd:77]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'receiver_FIFO' instantiated as 'BRIDGE/receive_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:251]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'transmitter_fifo' instantiated as 'BRIDGE/transmit_fifo' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/usb_fpga_bridge.vhd:267]
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp/clock_generator_in_context.xdc] for cell 'MAIN_CLOCK'
+Finished Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp/clock_generator_in_context.xdc] for cell 'MAIN_CLOCK'
+Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_2/ftdi_clock_gen_in_context.xdc] for cell 'BRIDGE/register_and_buffer/ftdi_clock_generator'
+Finished Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_2/ftdi_clock_gen_in_context.xdc] for cell 'BRIDGE/register_and_buffer/ftdi_clock_generator'
+Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_3/receiver_FIFO_in_context.xdc] for cell 'BRIDGE/receive_fifo'
+Finished Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_3/receiver_FIFO_in_context.xdc] for cell 'BRIDGE/receive_fifo'
+Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_4/transmitter_fifo_in_context.xdc] for cell 'BRIDGE/transmit_fifo'
+Finished Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_4/transmitter_fifo_in_context.xdc] for cell 'BRIDGE/transmit_fifo'
+Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc]
+WARNING: [Vivado 12-507] No nets matched 'i_read_button_IBUF'. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc:19]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-reset_path' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc:92]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-reset_path' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc:94]
+Finished Parsing XDC File [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ADC_BRIDGE_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/constrs_1/new/CONSTRAINTS_PROVA.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ADC_BRIDGE_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_BRIDGE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 640.461 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_P. (constraint file  {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp/clock_generator_in_context.xdc}, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_P. (constraint file  {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp/clock_generator_in_context.xdc}, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for ftdi_clk. (constraint file  {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_2/ftdi_clock_gen_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ftdi_clk. (constraint file  {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/.Xil/Vivado-3364-DESKTOP-LG89K48/dcp_2/ftdi_clock_gen_in_context.xdc}, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "spi_write_en" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_write_en" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_program_signal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "asic_load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "asic_load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flag" won't be mapped to RAM because address size (56) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "LED_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SoC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "program_signal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "o_trigger" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_trigger" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'o_trigger_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:837]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_1_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:775]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_2_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:775]
+WARNING: [Synth 8-327] inferring latch for variable 'SoC_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:775]
+WARNING: [Synth 8-327] inferring latch for variable 'program_signal_reg' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/imports/Desktop/Michele Ricci materiale/fpga/test_comunicazione/transmit_from_fpga_test/main.vhd:444]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |utility__GC0         |           1|        23|
+|2     |usb_fpga_bridge__GC0 |           1|       110|
+|3     |ADC_ARRAY            |           1|     43550|
+|4     |ADC_BRIDGE__GCB1     |           1|     10106|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 16    
+	   2 Input      4 Bit       Adders := 32    
++---Registers : 
+	              112 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 17    
+	                8 Bit    Registers := 18    
+	                4 Bit    Registers := 16    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 55    
++---RAMs : 
+	              256 Bit         RAMs := 16    
++---Muxes : 
+	   2 Input    112 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 48    
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 62    
+	   4 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ADC_BRIDGE 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
+Module utility 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+Module transmitter_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module receiver_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module arbiter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module axel_adc__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axel_adc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module PIPO_shift 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 14    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module command_block 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module program_spi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    112 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module circular_buffer__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module circular_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module funnel 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_adc_data_valid" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flag" won't be mapped to RAM because address size (56) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'count_read_reg[31:0]' into 'count_read_reg[31:0]' [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/program_spi.vhd:54]
+INFO: [Synth 8-5545] ROM "count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_program_signal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_write_en" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_write_en" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "asic_load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "asic_load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "rom_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "o_trigger" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "o_trigger" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design ADC_BRIDGE has port ftdi_SIWU driven by constant 1
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo0/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo1/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo2/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo3/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo4/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo5/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo6/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo7/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo8/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo9/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo10/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo11/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo12/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo13/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo14/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fifo15/dataout_reg' and it is trimmed from '16' to '14' bits. [C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.srcs/sources_1/new/circular_buffer.vhd:63]
+WARNING: [Synth 8-3332] Sequential element (spi_write_data_retimed_reg) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (finish_program_reg) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_write_en_reg) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (asic_load_reg) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[0]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[1]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[2]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[3]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[4]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[5]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[6]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[7]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[8]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[9]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[10]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[11]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[12]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[13]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[14]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[15]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[16]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[17]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[18]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[19]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[20]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[21]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[22]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[23]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[24]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[25]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[26]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[27]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[28]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[29]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[30]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[31]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[32]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[33]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[34]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[35]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[36]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[37]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[38]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[39]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[40]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[41]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[42]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[43]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[44]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[45]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[46]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[47]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[48]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[49]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[50]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[51]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[52]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[53]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[54]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[55]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[56]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[57]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[58]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[59]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[60]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[61]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[62]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[63]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[64]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[65]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[66]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[67]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[68]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[69]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[70]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[71]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[72]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[73]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[74]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[75]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[76]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[77]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[78]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[79]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[80]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[81]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[82]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[83]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[84]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[85]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[86]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[87]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[88]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[89]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[90]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[91]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[92]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[93]) is unused and will be removed from module program_spi.
+WARNING: [Synth 8-3332] Sequential element (spi_string_read_reg[94]) is unused and will be removed from module program_spi.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------+-----------+----------------------+--------------+
+|funnel_fifo | fifo0/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo1/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo2/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo3/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo4/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo5/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo6/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo7/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo8/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo9/memory_reg  | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo10/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo11/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo12/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo13/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo14/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
+|funnel_fifo | fifo15/memory_reg | Implied   | 16 x 14              | RAM32M x 3   | 
++------------+-------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |utility__GC0         |           1|        23|
+|2     |usb_fpga_bridge__GC0 |           1|       107|
+|3     |ADC_ARRAY            |           1|      3518|
+|4     |ADC_BRIDGE__GCB1     |           1|      2876|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MAIN_CLOCK/CLK_OUT1' to pin 'MAIN_CLOCK/bbstub_CLK_OUT1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MAIN_CLOCK/CLK_OUT2' to pin 'MAIN_CLOCK/bbstub_CLK_OUT2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MAIN_CLOCK/CLK_OUT3' to pin 'MAIN_CLOCK/bbstub_CLK_OUT3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MAIN_CLOCK/CLK_OUT4' to pin 'MAIN_CLOCK/bbstub_CLK_OUT4/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MAIN_CLOCK/CLK_OUT5' to pin 'MAIN_CLOCK/bbstub_CLK_OUT5/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ftdi_clock_generator/CLK_OUT1' to pin 'ftdi_clock_generator/bbstub_CLK_OUT1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ftdi_clock_generator/CLK_OUT2' to pin 'ftdi_clock_generator/bbstub_CLK_OUT2/O'
+WARNING: [Synth 8-565] redefining clock 'ftdi_clk'
+WARNING: [Synth 8-565] redefining clock 'CLK_IN1_P'
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |utility__GC0         |           1|        23|
+|2     |usb_fpga_bridge__GC0 |           1|       107|
+|3     |ADC_ARRAY            |           1|      3518|
+|4     |ADC_BRIDGE__GCB1     |           1|      2876|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop BRIDGE/transmitter_machine/ftdi_dq_oe_reg is being inverted and renamed to BRIDGE/transmitter_machine/ftdi_dq_oe_reg_inv.
+INFO: [Synth 8-5365] Flop FLAG_reg is being inverted and renamed to FLAG_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clock_generator  |         1|
+|2     |receiver_FIFO    |         1|
+|3     |transmitter_fifo |         1|
+|4     |ftdi_clock_gen   |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clock_generator_bbox  |     1|
+|2     |ftdi_clock_gen_bbox   |     1|
+|3     |receiver_FIFO_bbox    |     1|
+|4     |transmitter_fifo_bbox |     1|
+|5     |BUFG                  |     1|
+|6     |CARRY4                |   423|
+|7     |LUT1                  |   851|
+|8     |LUT2                  |  1673|
+|9     |LUT3                  |   112|
+|10    |LUT4                  |   167|
+|11    |LUT5                  |    59|
+|12    |LUT6                  |   446|
+|13    |MUXF7                 |    24|
+|14    |MUXF8                 |    12|
+|15    |RAM32M                |    48|
+|16    |FDPE                  |    17|
+|17    |FDRE                  |  1533|
+|18    |FDSE                  |    25|
+|19    |LD                    |     3|
+|20    |LDC                   |     2|
+|21    |IBUF                  |     4|
+|22    |IOBUF                 |     8|
+|23    |OBUF                  |    11|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |  5450|
+|2     |  ADC                   |ADC_ARRAY          |  3544|
+|3     |    adc0                |axel_adc           |   221|
+|4     |    adc1                |axel_adc_15        |   221|
+|5     |    adc10               |axel_adc_16        |   221|
+|6     |    adc11               |axel_adc_17        |   221|
+|7     |    adc12               |axel_adc_18        |   221|
+|8     |    adc13               |axel_adc_19        |   221|
+|9     |    adc14               |axel_adc_20        |   221|
+|10    |    adc15               |axel_adc_21        |   221|
+|11    |    adc2                |axel_adc_22        |   221|
+|12    |    adc3                |axel_adc_23        |   221|
+|13    |    adc4                |axel_adc_24        |   221|
+|14    |    adc5                |axel_adc_25        |   221|
+|15    |    adc6                |axel_adc_26        |   221|
+|16    |    adc7                |axel_adc_27        |   221|
+|17    |    adc8                |axel_adc_28        |   221|
+|18    |    adc9                |axel_adc_29        |   221|
+|19    |  BRIDGE                |usb_fpga_bridge    |    80|
+|20    |    arb                 |arbiter            |     3|
+|21    |    receiver_machine    |receiver_fsm       |     9|
+|22    |    register_and_buffer |utility            |    37|
+|23    |    transmitter_machine |transmitter_fsm    |     9|
+|24    |  COMMAND               |command_block      |   249|
+|25    |    pipo                |PIPO_shift         |   125|
+|26    |  funnel_queue          |funnel_fifo        |   740|
+|27    |    fifo0               |circular_buffer    |    41|
+|28    |    fifo1               |circular_buffer_0  |    41|
+|29    |    fifo10              |circular_buffer_1  |    41|
+|30    |    fifo11              |circular_buffer_2  |    65|
+|31    |    fifo12              |circular_buffer_3  |    41|
+|32    |    fifo13              |circular_buffer_4  |    41|
+|33    |    fifo14              |circular_buffer_5  |    41|
+|34    |    fifo15              |circular_buffer_6  |    53|
+|35    |    fifo2               |circular_buffer_7  |    41|
+|36    |    fifo3               |circular_buffer_8  |    77|
+|37    |    fifo4               |circular_buffer_9  |    41|
+|38    |    fifo5               |circular_buffer_10 |    41|
+|39    |    fifo6               |circular_buffer_11 |    41|
+|40    |    fifo7               |circular_buffer_12 |    53|
+|41    |    fifo8               |circular_buffer_13 |    41|
+|42    |    fifo9               |circular_buffer_14 |    41|
+|43    |  multiplexer           |funnel             |   168|
+|44    |  program_sfera         |program_spi        |   443|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 206 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 640.461 ; gain = 111.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 640.461 ; gain = 430.094
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 488 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LD => LDCE: 3 instances
+  LDC => LDCE: 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+182 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 640.461 ; gain = 430.094
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/ADC_BRIDGE.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 640.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 09 16:27:52 2017...

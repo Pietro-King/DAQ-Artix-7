@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 08 16:06:30 2017
+# Process ID: 8592
+# Current directory: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4156 C:\Users\Tesista\Desktop\vivado projects\fix_7_novembre\fix_7_novembre.xpr
+# Log file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/vivado.log
+# Journal file: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 771.082 ; gain = 113.449
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+[Wed Nov 08 16:07:42 2017] Launched synth_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/runme.log
+launch_runs impl_3 -jobs 2
+[Wed Nov 08 16:09:18 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Wed Nov 08 16:21:13 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+[Wed Nov 08 16:36:25 2017] Launched synth_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/runme.log
+launch_runs impl_3 -jobs 2
+[Wed Nov 08 16:37:34 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Wed Nov 08 16:49:26 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+reset_run synth_3
+launch_runs synth_3 -jobs 2
+[Wed Nov 08 16:59:06 2017] Launched synth_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/synth_3/runme.log
+launch_runs impl_3 -jobs 2
+[Wed Nov 08 17:02:27 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Wed Nov 08 17:11:28 2017] Launched impl_3...
+Run output will be captured here: C:/Users/Tesista/Desktop/vivado projects/fix_7_novembre/fix_7_novembre.runs/impl_3/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 08 17:55:24 2017...
